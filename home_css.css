@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    font-family: "Itim", sans-serif;
+    background : linear-gradient( 45deg, #1F2544 , #474F7A , #81689D , #FFD0EC);
+    background-attachment: fixed;
+}
+.container {
+    width: 80%;
+    margin:  auto;
+    text-align: center;
+}
+.game-area {
+    background-color: #474F7A;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    height: auto;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD0EC;
+    color: #474F7A;
+    text-decoration: none;  
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #81689D;
+    color: #FFD0EC;
+}
+
+
+h1 {
+    color: white;
+    text-shadow:  1px -1px 10px red, 1px -1px 10px orange, -1px 2px 1px yellow, -2px 4px 1px green,-3px 6px 1px indigo,-4px 8px 1px violet,-5px 10px 1px;
+    /* background-image: linear-gradient(to right,red,orange,yellow,rgb(6, 187, 6),rgb(23, 228, 255),rgb(149, 0, 255),violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-size: 70px;
+    margin: 10px;
+    margin-top: 30px;
+    width: fit-content;
+}
+h2 {
+    color: #eee;
+    font-size: 40px;
+    margin: 10px;
+    margin-top: 30px;
+}
+h3 {
+    color: #eee;
+    font-size: 30px;
+    margin: 10px;
+    margin-top: 10px;
+}
+h4 {
+    color: #eee;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 10px;
+}
+h5 {
+    color: #eee;
+    font-size: 30px;
+    margin: 20px;
+}
+h6 {
+    color: #eee;
+    font-size: 20px;
+    margin: 10px;
+}
+p {
+    color: #eee;
+}
+
+.container .game-area h2 , p {
+    color: #eee;
+} 
+
+.png-con {
+ cursor: pointer;
+ 
+}
+.container {
+    text-align: center;
+}
+.score-Rule {
+    background-color: #474F7A;
+    background-position: center;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    margin: auto;
+    padding: 25px;
+    width: fit-content;
+}
+.game-Rule,
+.score-Rule {
+    display: none;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Game | Play</title>
+<link rel="stylesheet" href="game_css.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="game-container">
+    <div id="timer"></div>
+	<div id="game-score">Score: 0</div>
+    <div id="game-board">
+    <div class="operator" id="plus">+</div>
+		<div class="operator" id="minus">-</div>
+		<div class="operator" id="multi">×</div>
+		<div class="operator" id="divide">÷</div>
+    </div>
+	<div id="game-inventory">
+		<div id="inventory-item">
+            <div class="inv" id="inv1"></div>
+            <div class="inv" id="inv2"></div>
+        </div>
+		<div id="calculator">
+			<div class="calcu" id="number1"></div>
+			<div id="opera"></div>
+			<div class="calcu" id="number2"></div>
+			<button class="button" id="submit-button">Submit</button>
+		</div>
+	</div>
+    <div id="modal-overlay" class="modal-overlay">
+        <div id="modal-content" class="modal-content">
+          <label id="score-results">Game Over</label>
+          <br>
+          <br>
+          <button id="retry-button">Retry</button>
+          <button id="main-menu-button">Main Menu</button>
+        </div>
+      </div>
+      <div>
+        <img src="/img/cool star.png" alt="">
+      </div>
+      <audio id="ballSound">
+        <source src="sound/ball-tap.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="bonusSound">
+        <source src="sound/bonus.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="sumSound">
+        <source src="sound/alert.mp3" type="audio/mpeg">
+      </audio>
+      <audio autoplay loop id="bgSound">
+        <source src="sound/std.mp3" type="audio/mpeg">
+      </audio>
+      <audio autoplay id="startSound">
+        <source src="sound/startSound.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<script src="code.js"></script>
+<script src="enemy.js"></script>
+<script src="inventory.js"></script>
+<script src="calcu.js"></script>
+<script src="timer.js"></script>
+<script src="sound.js"></script>
+</body>
+</html>
